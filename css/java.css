@@ -1,0 +1,234 @@
+*{ margin:0;
+	padding:0; }
+
+/* Navigation bar */
+
+#navbar { display:flex; }
+
+#navbar::before { background-color: #51cbd0;
+				  content: "";
+				  position:absolute;
+				  top:0;
+				  left:0;
+				  width:100%;
+				  height:9%;
+				  z-index: -1;
+				  opacity:.6; }
+
+#navbar img { width: 48px;
+    		  height: 51px;
+    		  margin: 4px 4px; }
+
+#navbar ul { list-style:none;
+			 display:flex;
+			font-family: 'Baloo Bhai 2', cursive; }
+
+#navbar li { margin:16px 15px; }
+
+#navbar li a { text-decoration:none;
+				color:white;
+				padding:9px 20px; }
+
+#navbar li a:hover { background:black;
+				  border-radius: 50px; }
+
+#navbar ul ul { display:flex;
+				flex-direction: column;
+				position:relative;
+				top:0;
+				left:0; }
+
+#navbar ul ul li { margin: 1px 10px;
+    			   height: 36px;
+    			   width: 103px;
+    			   line-height: 2;
+    			   text-align: center;
+    			   position: relative;
+    			   top: 22px;
+    			   left: 0; }
+
+#navbar ul ul { display:none; }
+
+#navbar ul li:hover > ul { display:block; }
+
+#navbar ul ul ul { position: absolute;
+    			   margin-left: 72px;
+    			   top: -24px;}
+
+/* home section */
+
+#home { display:flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center; }
+
+#home::before { background-image: url('../img/Blog-PHP7-3.jpg');
+				background-size: cover;
+				background-repeat: no-repeat;
+				content: "";
+				position:absolute;
+				  top:-345;
+				  left:0;
+				  width:100%;
+				  height:110%;
+				  z-index: -1;
+				  opacity:.9; }
+
+.btn { margin: 19px 0px;
+    background: #18354c;
+    font-size: 18px;
+    width: 211px;
+    padding: 9px;
+    border-radius: 8px;
+    color: gold;
+    border: 2px solid black;
+    cursor:pointer;
+    font-family: 'Baloo Bhai 2', cursive; }
+
+.btn a { text-decoration: none;
+		  color:gold; }
+
+ #home p { margin:1px 0px;
+ 			font-size: 1.1rem;
+ 			color:#00fffc;
+ 			font-family: 'Oswald', sans-serif; }
+
+ #home h1 { color:white; }
+
+
+/* utility classe's */
+
+.primary { font-size:2.2rem;
+			margin:34px 12px;
+			font-family: 'Baloo Bhai 2', cursive; }
+
+.secound { font-size:2.2rem;
+			margin:34px 42px;
+			font-family: 'Baloo Bhai 2', cursive; }
+
+span { color: black; }
+
+/* cantenar */
+
+#cantenar { display:flex;
+			flex-direction: column;
+			flex-wrap:wrap;
+			justify-content: center;
+			align-items: center; }
+
+#cantenar-box { display:flex;
+				flex-wrap: wrap; }
+
+.sub { border:1px solid;
+		width:300px;
+		margin:0px 4px;
+		border-radius: 5px;
+		text-align:center;
+		background-color:#e1eaea; }
+
+.sub p { padding:6px;
+		 font-family: 'Oswald', sans-serif; }
+
+.sub a { text-decoration: none;
+			color:black;
+			font-size:1.4rem;
+			font-family: 'Baloo Bhai 2', cursive;  }
+
+.sub img { width:80px; }
+
+.hp { width: 152px;
+    	height: 39px;
+    	margin: 5px 0px; }
+
+.j { width: 150px;
+    height: 37px;
+    margin: 6px 0px; }
+
+/* clint section */
+
+#clint { display:flex;
+		  justify-content: center;
+		  align-items: center;
+		  flex-direction: column; }
+
+.clint { display:flex; }
+
+.clint img { width: 98px;
+    		 margin: 18px 55px; }
+
+/* appe */
+
+#app { display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center; }
+
+.app { margin: 33px; }
+
+.app a { margin:0px 75px;
+		 color:black; }
+
+.app a i { transition: all 0.4s linear; }
+
+.app a:hover i { transform: scale(1.3); }
+
+#contact { display:flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center; }
+
+#contact::before { background-image: url('../img/download (1).jfif');
+					background-repeat: no-repeat;
+					background-size: cover;
+					content: "";
+					position:absolute;
+					top:1053;
+					left:0;
+					width:100%;
+					height:58%;
+					z-index: -1;
+					opacity: .7; }
+
+.form { display:flex;
+		flex-direction: column;
+		width:500px;
+		height:auto; }
+
+.form input { width: 493px;
+    		  margin: 2px 3px;
+    		  padding: 9px;
+    		  text-align: center;
+    		  border-radius: 7px;
+    		  border: 2px solid black; }
+
+textarea { width: 493px;
+			height:40px;
+    		  margin: 2px 3px;
+    		  padding: 9px;
+    		  text-align: center;
+    		  border-radius: 7px;
+    		  border: 2px solid black; }
+
+/* footer */
+
+footer { margin: 42px 12px; }
+
+footer h1 { border: 1px solid;
+			padding:9px;
+			text-align:center;
+			background:black;
+			color: white; }
+
+/* php */
+
+.php-cant { display:flex; }
+
+.php-cant img { width:350px;
+				height:280px;
+				margin:12px; }
+
+.php-cant p{ padding:9px; }
+
+/* About */
+
+.about { margin:32px 43px; }
